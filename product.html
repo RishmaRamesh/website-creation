@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="product-container">
+        <h1>Products</h1>
+        <div class="product-list">
+            <div class="product">
+                <span class="product-name">Pen</span>
+                <span class="product-price">  Rs.5/each</span>
+                <button class="add-to-cart" onclick="addToCart('Pen', 5)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="product-name">Pencil</span>
+                <span class="product-price">  Rs.2/each</span>
+                <button class="add-to-cart" onclick="addToCart('Pencil', 2)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="product-name">Eraser</span>
+                <span class="product-price">  Rs.1/each</span>
+                <button class="add-to-cart" onclick="addToCart('Eraser', 1)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="product-name">Sharpener</span>
+                <span class="product-price">  Rs.2/each</span>
+                <button class="add-to-cart" onclick="addToCart('Sharpener', 2)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <span class="product-name">Geometry Box</span>
+                <span class="product-price">  Rs.10/each</span>
+                <button class="add-to-cart" onclick="addToCart('Geometry Box', 10)">Add to Cart</button>
+            </div>
+                <div class="product">
+                    <div class="product-details">
+                        <h3 class="product-name">Happy Product</h3>
+                        <p class="product-price"></p>
+                        <a href="buynow.html" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: <span id="cart-total"> Rs.0</span></p>
+        </div>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalAmount = urlParams.get('totalAmount');
+        document.getElementById('total-amount').textContent = totalAmount;
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

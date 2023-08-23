@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <!-- <h2>Order</h2>
+
+
+
+
+        <p>Total Amount: $<span id="total-amount"></span></p>
+
+       <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalAmount = urlParams.get('totalAmount');
+            document.getElementById('total-amount').textContent = totalAmount;
+        </script> -->
+
+
+
+
+        
+        <!--<div class="order-summary">
+            <h3>Order Summary</h3>
+            <p id="total-amount">Total Purchase Amount: $0</p>
+        </div> -->
+        
+        <div class="payment-options">
+            <h3>Choose Payment Option</h3>
+            <button onclick="goToDeliveryPayment()"></button>
+            <a href="pay with card.html" class="payment-button">Pay with Card</a>
+            <a href="pay on delivery.html" class="payment-button">Pay on Delivery</a>
+        </div>
+    </div>
+    <a href="product.html?totalAmount=${totalAmount}"></a>
+
+   <!-- <script src="script.js"></script> -->
+</body>
+</html>

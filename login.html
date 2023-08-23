@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <form action="insert.php" method="POST"></form>
+      <div class="wrapper">
+         <div class="title">
+            Login
+         </div>
+         <form action="#">
+            <div class="field">
+               <input type="text" name="Email Address" required>
+               <label>Email Address</label>
+            </div>
+            <div class="field">
+               <input type="password" name="Password" required>
+               <label>Password</label>
+            </div>
+            <div class="content">
+               <div class="checkbox">
+                  <input type="checkbox" id="remember-me">
+                  <label for="remember-me">Remember me</label>
+               </div>
+               <div class="pass-link">
+                  <a href="#">Forgot password?</a>
+               </div>
+            </div>
+            <div class="field">
+               <input type="submit" value="Login">
+            </div>
+            <div class="signup-link">
+             <a href="signup.html">Signup now</a>
+            </div>
+         </form>
+        <!-- <script>
+            function validateEmail(event) {
+    event.preventDefault(); // Prevents the form from submitting
+    
+    const emailInput = document.getElementById("email");
+    const passwordInput = document.getElementById("password");
+
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    if (email === "") {
+        alert("Email is required.");
+    } else {
+        alert("Email is Not required.")
+    }
+}
+
+         </script> -->
+      </div>
+   </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment Confirmation</title>
+<link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <h1>Payment Confirmation</h1>
+  
+  <p>Your initial amount: 1000</p>
+  
+  <form id="paymentForm">
+    <label for="product">Select a product:</label>
+    <select id="product" name="product">
+      <option value="product1">Product 1</option>
+      <option value="product2">Product 2</option>
+      <option value="product3">Product 3</option>
+      <option value="product3">Product 4</option>
+      <option value="product3">Product 5</option>
+    </select>
+    <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+        <option value="product3">Product 4</option>
+        <option value="product3">Product 5</option>
+      </select>
+      <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+        <option value="product3">Product 4</option>
+        <option value="product3">Product 5</option>
+      </select>
+      <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+        <option value="product3">Product 4</option>
+        <option value="product3">Product 5</option>
+      </select>
+      <select id="product" name="product">
+        <option value="product1">Product 1</option>
+        <option value="product2">Product 2</option>
+        <option value="product3">Product 3</option>
+        <option value="product3">Product 4</option>
+        <option value="product3">Product 5</option>
+      </select>
+    <button type="button" onclick="purchase()">Purchase</button>
+    <button type="button" onclick="cancel()">Cancel</button>
+  </form>
+  
+  <p id="statusMessage"></p>
+
+  
+  <script>
+    let initialAmount = 1000;
+
+    function purchase() {
+      const product = document.getElementById("product").value;
+      
+      if (product === "product1") {
+        initialAmount += 100;
+        updateStatus(`You purchased Product 1. Your new amount: $${initialAmount}`);
+      } else if (product === "product2") {
+        initialAmount += 200;
+        updateStatus(`You purchased Product 2. Your new amount: $${initialAmount}`);
+      } else if (product === "product3") {
+        initialAmount += 300;
+        updateStatus(`You purchased Product 3. Your new amount: $${initialAmount}`);
+      }
+    }
+
+    function cancel() {
+      updateStatus("Purchase canceled.");
+    }
+
+    function updateStatus(message) {
+      const statusMessage = document.getElementById("statusMessage");
+      statusMessage.textContent = message;
+    }
+  </script>
+</body>
+</html>

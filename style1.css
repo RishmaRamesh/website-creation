@@ -1,0 +1,62 @@
+
+body, h1, h2, h3, p, ul, li, form, input, button, a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+}
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+
+.checkout-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary {
+    margin-bottom: 30px;
+}
+
+.order-summary h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.order-summary p {
+    font-size: 18px;
+}
+
+.payment-options h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.payment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-right: 15px;
+}
+
+.payment-button:hover {
+    background-color: #0056b3;
+}
